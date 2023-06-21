@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".DashboardFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:id="@+id/header_dashboard"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:background="@color/white">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_picture"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/piggy" />
+
+        <TextView
+            android:id="@+id/tv1_dash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="73dp"
+            android:layout_marginTop="20dp"
+            android:text="Hi,"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv1_dash"
+            android:layout_alignStart="@id/tv1_dash"
+            android:text="Gracy"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="18dp"
+            android:src="@drawable/notification_icon" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_dashboard"
+        android:layout_alignStart="@id/progress_layout"
+        android:layout_marginTop="16dp"
+        android:text="Your Progress"
+        android:textColor="@color/black"
+        android:layout_marginBottom="8dp"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/progress_layout"
+        android:layout_width="380dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/tv_progress"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_corner">
+
+        <TextView
+            android:id="@+id/tv_pthis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/progressBar"
+            android:layout_marginTop="14dp"
+            android:text="Progress this month"
+            android:textColor="@color/black"
+            android:textSize="11sp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:max="100"
+            android:progress="76"
+            android:progressTint="@color/orange" />
+
+        <TextView
+            android:id="@+id/txt_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="20dp"
+            android:text="76%"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progress_layout"
+        android:layout_alignStart="@id/tv_progress"
+        android:layout_marginTop="16dp"
+        android:text="Status"
+        android:layout_marginBottom="9dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_status"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:text="see more"
+        android:textColor="@color/blue_simonsa"
+        android:textSize="12sp" />
+
+    <HorizontalScrollView
+        android:id="@+id/scroll_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_status"
+        android:layout_alignStart="@id/tv_status">
+
+        <LinearLayout
+            android:id="@+id/status_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="190dp"
+                android:layout_height="100dp"
+                android:background="@drawable/rounded_corner">
+
+                <TextView
+                    android:id="@+id/tv_total_sales"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Total Sales"
+                    android:textColor="@color/blue_simonsa"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/total_sales"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_total_sales"
+                    android:layout_alignStart="@id/tv_total_sales"
+                    android:text="40"
+                    android:textColor="@color/black"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_total_sales_today"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/total_sales"
+                    android:layout_alignStart="@id/tv_total_sales"
+                    android:text="today"
+                    android:textColor="@color/black"
+                    android:textSize="11sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="190dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/rounded_corner">
+
+                <TextView
+                    android:id="@+id/tv_total_sales2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Total Sales"
+                    android:textColor="@color/blue_simonsa"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/total_sales2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_total_sales2"
+                    android:layout_alignStart="@id/tv_total_sales2"
+                    android:text="131"
+                    android:textColor="@color/black"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_total_sales_past3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/total_sales2"
+                    android:layout_alignStart="@id/tv_total_sales2"
+                    android:text="past 3 days"
+                    android:textColor="@color/black"
+                    android:textSize="11sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="190dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/rounded_corner">
+
+                <TextView
+                    android:id="@+id/tv_average_sales"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Total Sales"
+                    android:textColor="@color/blue_simonsa"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/average_sales"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_average_sales"
+                    android:layout_alignStart="@id/tv_average_sales"
+                    android:text="43"
+                    android:textColor="@color/black"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_total_sales_average"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/average_sales"
+                    android:layout_alignStart="@id/tv_average_sales"
+                    android:text="this month"
+                    android:textColor="@color/black"
+                    android:textSize="11sp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/tv_stores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scroll_status"
+        android:layout_alignStart="@id/tv_progress"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="9dp"
+        android:text="Stores"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/see_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_stores"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:text="see more"
+        android:textColor="@color/blue_simonsa"
+        android:textSize="12sp" />
+
+    <HorizontalScrollView
+        android:id="@+id/scroll_stores"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_stores"
+        android:layout_alignStart="@id/tv_stores">
+
+        <LinearLayout
+            android:id="@+id/stores_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="245dp"
+                android:layout_height="210dp"
+                android:background="@drawable/rounded_corner">
+
+                <ImageView
+                    android:id="@+id/store_photo"
+                    android:layout_width="210dp"
+                    android:layout_height="145dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"
+                    android:scaleType="center"
+                    android:src="@drawable/store_image1" />
+
+                <TextView
+                    android:id="@+id/store_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/store_photo"
+                    android:layout_alignStart="@id/store_photo"
+                    android:text="Puspa Indah Melati"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/store_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/store_name"
+                    android:layout_alignStart="@id/store_name"
+                    android:text="Mlati Jati, Mlati Beningan, Sendangadi, Kec. Mlati, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55285"
+                    android:textSize="11sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="245dp"
+                android:layout_height="210dp"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/rounded_corner">
+
+                <ImageView
+                    android:id="@+id/store_photo_2"
+                    android:layout_width="210dp"
+                    android:layout_height="145dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"
+                    android:scaleType="center"
+                    android:src="@drawable/store_image2" />
+
+                <TextView
+                    android:id="@+id/store_name_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/store_photo_2"
+                    android:layout_alignStart="@id/store_photo_2"
+                    android:text="Sasanti Kosmetik"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/store_address_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/store_name_2"
+                    android:layout_alignStart="@id/store_name_2"
+                    android:text="Jalan Raya Tajem, Maguwoharjo"
+                    android:textSize="11sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="245dp"
+                android:layout_height="210dp"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/rounded_corner">
+
+                <ImageView
+                    android:id="@+id/store_photo_3"
+                    android:layout_width="210dp"
+                    android:layout_height="145dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"
+                    android:scaleType="center"
+                    android:src="@drawable/store_image3" />
+
+                <TextView
+                    android:id="@+id/store_name_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/store_photo_3"
+                    android:layout_alignStart="@id/store_photo_3"
+                    android:text="Toko Siapa Ini"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/store_address_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/store_name_3"
+                    android:layout_alignStart="@id/store_name_3"
+                    android:text="Jalan tapi tidak dianggap"
+                    android:textSize="11sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+</RelativeLayout>

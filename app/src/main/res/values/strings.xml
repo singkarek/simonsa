@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Mobile</string>
+    <string name="head_presensi">Presensi</string>
+    <string name="head_settings">Account</string>
+    <string name="head_stores">Stores</string>
+    <string name="head_transaction">Transaction</string>
+    <string name="head_detailtransaction">Ina Kosmetik</string>
+    <string name="head_addtransaction">Add Transaction</string>
+    <string name="head_choosestore">Choose Stores</string>
+    <string name="head_documentation">Add Documentation</string>
+    <string name="head_detailstore">Puspa Indah Melati</string>
+    <string name="head_addstore">Add Store</string>
+    <string name="added_dialog">Data has been added!</string>
+    <string name="sub_menu_account">Account</string>
+    <string name="uhint">Enter your username</string>
+    <string name="phint">Enter your password</string>
+    <string name="prefstatus">loggedin</string>
+    <string-array name="list">
+        <item>MY - Pink Line</item>
+        <item>MY - Blue Line</item>
+        <item>MY - Orange Line</item>
+        <item>MY - Gold Line</item>
+        <item>MY - Brown Line</item>
+        <item>MY - Green Line</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

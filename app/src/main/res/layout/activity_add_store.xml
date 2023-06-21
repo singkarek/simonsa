@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".AddStore">
+
+    <RelativeLayout
+        android:id="@+id/header_addstore"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_head_addstore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/head_addstore"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="27dp"
+            android:background="@color/white"
+            android:src="@drawable/back_icon" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_addstore">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/layout_input_store"
+                android:layout_width="380dp"
+                android:layout_height="380dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/rounded_corner">
+
+                <TextView
+                    android:id="@+id/tv_sellerdetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Seller Details"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_sellername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_sellerdetails"
+                    android:layout_alignStart="@id/tv_sellerdetails"
+                    android:layout_marginTop="16dp"
+                    android:text="Seller Name"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/txt_sellername"
+                    android:layout_width="350dp"
+                    android:layout_height="45dp"
+                    android:layout_below="@id/tv_sellername"
+                    android:layout_alignStart="@id/tv_sellername"
+                    android:background="@drawable/custom_input"
+                    android:hint="Seller name"
+                    android:paddingStart="12dp"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_storename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_sellername"
+                    android:layout_alignStart="@id/tv_sellerdetails"
+                    android:layout_marginTop="16dp"
+                    android:text="Store Name"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/txt_storename"
+                    android:layout_width="350dp"
+                    android:layout_height="45dp"
+                    android:layout_below="@id/tv_storename"
+                    android:layout_alignStart="@id/tv_storename"
+                    android:background="@drawable/custom_input"
+                    android:hint="Store name"
+                    android:paddingStart="12dp"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_storename"
+                    android:layout_alignStart="@id/tv_sellerdetails"
+                    android:layout_marginTop="16dp"
+                    android:text="Address"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/txt_address"
+                    android:layout_width="350dp"
+                    android:layout_height="45dp"
+                    android:layout_below="@id/tv_address"
+                    android:layout_alignStart="@id/tv_address"
+                    android:background="@drawable/custom_input"
+                    android:hint="Address"
+                    android:paddingStart="12dp"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_address"
+                    android:layout_alignStart="@id/tv_sellerdetails"
+                    android:layout_marginTop="16dp"
+                    android:text="Phone Number"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/txt_phone"
+                    android:layout_width="350dp"
+                    android:layout_height="45dp"
+                    android:layout_below="@id/tv_phone"
+                    android:layout_alignStart="@id/tv_phone"
+                    android:background="@drawable/custom_input"
+                    android:hint="Phone number"
+                    android:inputType="number"
+                    android:paddingStart="12dp"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_photo"
+                android:layout_width="380dp"
+                android:layout_height="200dp"
+                android:layout_below="@id/layout_input_store"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/rounded_corner">
+
+                <TextView
+                    android:id="@+id/tv_photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Photo"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/btn_photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_photo"
+                    android:layout_alignStart="@id/tv_photo"
+                    android:layout_marginTop="7dp"
+                    android:background="@color/white"
+                    android:src="@drawable/take_photo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btn_photo"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Take a live photo"
+                    android:textSize="11sp" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="380dp"
+                android:layout_height="45dp"
+                android:layout_below="@id/layout_photo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="36dp"
+                android:background="@drawable/rounded_corner"
+                android:text="Save"
+                android:textAllCaps="false"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

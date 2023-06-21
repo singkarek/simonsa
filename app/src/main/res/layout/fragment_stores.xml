@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".StoresFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:id="@+id/header_stores"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/white">
+        <TextView
+            android:id="@+id/tv_head_stores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/head_stores"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btn_addstore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="35dp"
+            android:background="@color/white"
+            android:src="@drawable/add_icon" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header_stores">
+
+        <LinearLayout
+            android:id="@+id/layout_storelist"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/layout_store1"
+                android:layout_width="330dp"
+                android:layout_height="210dp"
+                android:background="@drawable/rounded_corner">
+
+                <ImageView
+                    android:id="@+id/stores_image1"
+                    android:layout_width="300dp"
+                    android:layout_height="145dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/store_image1" />
+
+                <TextView
+                    android:id="@+id/stores_name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/stores_image1"
+                    android:layout_alignStart="@+id/stores_image1"
+                    android:text="Fierda Jaya abadi"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/stores_name1"
+                    android:layout_alignStart="@id/stores_name1"
+                    android:text="Jalanin aja dulu"
+                    android:textSize="11sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_store2"
+                android:layout_width="330dp"
+                android:layout_marginTop="8dp"
+                android:layout_height="210dp"
+                android:background="@drawable/rounded_corner"
+                android:layout_below="@id/layout_store1"
+                android:layout_centerHorizontal="true">
+
+                <ImageView
+                    android:id="@+id/stores_image2"
+                    android:layout_width="300dp"
+                    android:layout_height="145dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/store_image2" />
+
+                <TextView
+                    android:id="@+id/stores_name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/stores_image2"
+                    android:layout_alignStart="@+id/stores_image2"
+                    android:text="Stephen Sejahtera Abadi"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/stores_name2"
+                    android:layout_alignStart="@id/stores_name2"
+                    android:text="Jalan bareng tanpa status"
+                    android:textSize="11sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_store3"
+                android:layout_width="330dp"
+                android:layout_height="210dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_corner"
+                android:layout_below="@id/layout_store2"
+                android:layout_centerHorizontal="true">
+
+                <ImageView
+                    android:id="@+id/stores_image3"
+                    android:layout_width="300dp"
+                    android:layout_height="145dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/store_image3" />
+
+                <TextView
+                    android:id="@+id/stores_name3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/stores_image3"
+                    android:layout_alignStart="@+id/stores_image3"
+                    android:text="Toko Siapa Ini"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/stores_name3"
+                    android:layout_alignStart="@id/stores_name3"
+                    android:text="Jalan tapi gak tau mau kemana"
+                    android:textSize="11sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

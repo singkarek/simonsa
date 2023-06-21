@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Presence">
+
+    <TextView
+        android:id="@+id/header_presensi"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:gravity="center"
+        android:text="@string/head_presensi"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_presensi"
+        android:text="7:30 WIB"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tv_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_time"
+        android:layout_alignStart="@id/btn_photo"
+        android:text="Photo"
+        android:textSize="10sp" />
+
+    <ImageButton
+        android:id="@+id/btn_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_photo"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/take_photo"
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/tv_take"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_photo"
+        android:layout_alignStart="@id/btn_photo"
+        android:text="Take a live photo"
+        android:textSize="10sp" />
+
+
+    <ImageView
+        android:id="@+id/testbitmap"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/tv_take"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/lati"
+        android:layout_below="@id/testbitmap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/tv_take"
+        android:visibility="invisible"/>
+    <TextView
+        android:layout_below="@id/lati"
+        android:id="@+id/longi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/tv_take"
+        android:visibility="invisible"/>
+    <TextView
+        android:id="@+id/testid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/longi"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/btn_save"
+        app:backgroundTint="@color/blue_simonsa"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/rounded_corner"
+        android:text="Save"
+        android:textSize="12sp"
+        android:textAllCaps="false" />
+
+</RelativeLayout>

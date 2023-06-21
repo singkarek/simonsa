@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/header_settings"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:gravity="center"
+        android:text="@string/head_settings"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/sub_menu_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_settings"
+        android:layout_marginStart="16dp"
+        android:text="@string/sub_menu_account"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/ct_edit_profile"
+        android:layout_width="360dp"
+        android:layout_height="56dp"
+        android:layout_below="@id/sub_menu_account"
+        android:layout_alignStart="@id/sub_menu_account"
+        android:clickable="true"
+        android:background="@drawable/text_state"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:text="Edit Profile"
+        app:drawableBottomCompat="@drawable/border_line"
+        app:drawableEndCompat="@drawable/arrow" />
+
+    <TextView
+        android:id="@+id/ct_feedback"
+        android:layout_width="360dp"
+        android:layout_height="56dp"
+        android:layout_below="@id/ct_edit_profile"
+        android:layout_alignStart="@id/sub_menu_account"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/text_state"
+        android:gravity="center_vertical"
+        android:text="Feedback"
+        app:drawableBottomCompat="@drawable/border_line"
+        app:drawableEndCompat="@drawable/arrow" />
+
+    <TextView
+        android:id="@+id/ct_rankings"
+        android:layout_width="360dp"
+        android:layout_height="56dp"
+        android:layout_below="@id/ct_feedback"
+        android:layout_alignStart="@id/sub_menu_account"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/text_state"
+        android:gravity="center_vertical"
+        android:text="Rankings"
+        app:drawableBottomCompat="@drawable/border_line"
+        app:drawableEndCompat="@drawable/arrow" />
+
+    <TextView
+        android:id="@+id/ct_logout"
+        android:layout_width="360dp"
+        android:layout_height="56dp"
+        android:layout_below="@id/ct_rankings"
+        android:layout_alignStart="@id/sub_menu_account"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:background="@drawable/text_state"
+        android:text="Log Out"
+        app:drawableBottomCompat="@drawable/border_line"
+        app:drawableEndCompat="@drawable/arrow" />
+
+</RelativeLayout>

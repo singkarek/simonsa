@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "216555473395",
+    "project_id": "simonsa-a8a9e",
+    "storage_bucket": "simonsa-a8a9e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:216555473395:android:6f204da2255c4423eeaa86",
+        "android_client_info": {
+          "package_name": "com.digiponic.mobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "216555473395-f8p5oi82ksi3ov4l4rk1je7uhd7rbtl9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAp3YPE4eHUA2SGeciAcp-LTi9s9QqzmS0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "216555473395-f8p5oi82ksi3ov4l4rk1je7uhd7rbtl9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/bg"
+    android:layout_height="match_parent"
+    tools:context=".AddTransaction3">
+
+    <RelativeLayout
+        android:id="@+id/header_documentation"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_head_documentation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/head_documentation"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="27dp"
+            android:background="@color/white"
+            android:src="@drawable/back_icon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@drawable/rounded_corner"
+        android:layout_width="360dp"
+        android:layout_height="300dp"
+        android:layout_below="@+id/header_documentation"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/tv_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Photo"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btn_photo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_photo"
+            android:layout_alignStart="@id/tv_photo"
+            android:background="@color/white"
+            android:src="@drawable/take_photo" />
+
+        <ImageButton
+            android:id="@+id/btn_photo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_photo1"
+            android:layout_alignStart="@id/tv_photo"
+            android:layout_marginTop="14dp"
+            android:background="@color/white"
+            android:src="@drawable/take_photo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_photo2"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="14dp"
+            android:text="Take a live photo"
+            android:textSize="11sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/rounded_corner"
+        android:text="Save"
+        android:textSize="12sp"
+        android:textAllCaps="false" />
+</RelativeLayout>
